@@ -26,7 +26,7 @@ grpcurl --plaintext -d "{\"name\": \"NAME1\"}" localhost:9090 pl.ztrzaska.grpc.R
 ### Reference Documentation
 For further reference, please consider the following sections:
 
-* [Grpc protocol](https://grpc.io/)
+* [Grpc framework](https://grpc.io/)
 * [Official Apache Maven documentation](https://maven.apache.org/guides/index.html)
 * [Spring Boot Maven Plugin Reference Guide](https://docs.spring.io/spring-boot/docs/2.7.0/maven-plugin/reference/html/)
 * [Spring Data JPA](https://docs.spring.io/spring-boot/docs/2.7.0/reference/htmlsingle/#data.sql.jpa-and-spring-data)

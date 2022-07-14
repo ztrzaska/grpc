@@ -1,0 +1,51 @@
+syntax = "proto3";
+
+package pl.ztrzaska.grpc;
+
+option java_multiple_files = true;
+option java_package = "pl.ztrzaska.grpc";
+
+//import "common.proto";
+
+service ReservationService {
+  rpc reserve(ReservationRequest) returns (ReservationCreateResponse) {}
+  rpc modify(ReservationModifyRequest) returns (Empty) {}
+  rpc findByRenter(ReservationNameRequest) returns (ReservationListResponse) {}
+  rpc findByObjectForRentName(ReservationNameRequest) returns (ReservationListResponse) {}
+}
+
+message ReservationRequest {
+  string period = 1;
+  double cost = 2;
+  int64 renterId = 3;
+  int64 objectForRentId = 4;
+}
+
+message ReservationModifyRequest {
+  int64 id = 1;
+  string period = 2;
+  double cost = 3;
+}
+
+message ReservationNameRequest {
+  string name = 1;
+}
+
+message ReservationCreateResponse {
+    int64 id = 1;
+}
+
+message ReservationResponse {
+  int64 id = 1;
+  string period = 2;
+  double cost = 3;
+  int64 renterId = 4;
+  int64 objectForRentId = 5;
+}
+
+message ReservationListResponse {
+  repeated ReservationResponse list = 1;
+}
+
+message Empty {
+}

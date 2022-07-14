@@ -1,0 +1,9 @@
+syntax = "proto3";
+
+package pl.ztrzaska.rental;
+
+option java_multiple_files = true;
+option java_package = "pl.ztrzaska.rental";
+
+message Empty {
+}

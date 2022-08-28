@@ -1,9 +1,8 @@
 # gRPC high performance microservices with Spring Boot
 
-# Getting Started
+### Getting Started
 
-### Start-up
-
+This project demonstrates spring boot microservices by using grpc communication. One of modules exposes grpc endpoints. Another microservice works as grpc client which calls grpc api.
 ```
 mvn clean install
 cd rental-grpc-service

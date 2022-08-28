@@ -1,8 +1,8 @@
-# gRPC communication with Spring Boot
+# gRPC high performance microservices with Spring Boot
 
 # Getting Started
 
-### Compilation and start-up
+### Start-up
 
 ```
 mvn clean install
